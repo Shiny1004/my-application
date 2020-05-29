@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="4dp"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:id="@+id/llayoutsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+
+        <ImageView
+            android:id="@+id/imgsearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/restaurant_default"
+            android:scaleType="centerCrop"
+            android:layout_margin="12dp"
+            android:layout_weight="2.1"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.1">
+
+
+            <TextView
+                android:id="@+id/searchtxtrestaurantname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ListItem"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="17dp"/>
+
+
+            <TextView
+                android:id="@+id/searchtxtcost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost"
+                android:layout_below="@id/searchtxtrestaurantname"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="23dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:id="@+id/searchtxtrating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:drawableLeft="@drawable/ic_icon_star"
+                android:text="3.4"
+                android:layout_centerInParent="true"
+                android:textColor="@color/yellow"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

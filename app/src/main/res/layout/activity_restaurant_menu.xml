@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainrlayoutresmenu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RestaurantMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imgresmenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/restaurant_default"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/restoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/login_light"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/resmenucardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="150dp">
+
+        <RelativeLayout
+            android:id="@+id/resmenuprogresslayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ProgressBar
+                android:id="@+id/resmenuprogressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/resmenutxterroroccured"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/some_error_occured_try_again_later"
+                android:textSize="14sp"
+                android:fontFamily="@font/ubuntu_light"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/txtresname"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurant"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:id="@+id/btnproceedtocart"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/txtresname"
+                    android:background="@color/login_light"
+                    android:text="@string/proceed_to_cart"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:layout_centerVertical="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/ic_icon_cart"
+                    android:drawableTint="@color/black"
+                    android:enabled="false"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/menurecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="10dp"
+                android:layout_margin="12dp"
+                android:layout_below="@id/rlayout1"/>
+
+         </RelativeLayout>
+
+     </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

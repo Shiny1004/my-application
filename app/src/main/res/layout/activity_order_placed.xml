@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OrderPlacedActivity"
+    android:background="@drawable/login_screen_background">
+
+    <ImageView
+        android:id="@+id/imgcheck"
+        android:layout_width="165dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_icon_check"
+        android:layout_marginTop="275dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtoderplaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_placed"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imgcheck"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:layout_below="@id/txtoderplaced"/>
+
+</RelativeLayout>

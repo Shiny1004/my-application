@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FavoritesFragment">
+
+    <RelativeLayout
+        android:id="@+id/favprogresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ProgressBar
+            android:id="@+id/favprogressbar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/favtxtnofavrestaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No favorite Restaurants"
+            android:textSize="14sp"
+            android:fontFamily="@font/ubuntu_light"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/favtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marked favorite by you:"
+        android:textSize="16sp"
+        android:fontFamily="@font/ubuntu_light"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_margin="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favtxt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+</RelativeLayout>

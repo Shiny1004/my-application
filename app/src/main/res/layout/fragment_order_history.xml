@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OrderHistoryFragment"
+    android:background="@color/colorMy2">
+
+    <RelativeLayout
+        android:id="@+id/ohprogresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:id="@+id/ohprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/ohtxterroroccured"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/some_error_occured_try_again_later"
+            android:textSize="14sp"
+            android:fontFamily="@font/ubuntu_light"/>
+
+
+        <TextView
+            android:id="@+id/ohtxtnoorders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_previous_orders"
+            android:textSize="14sp"
+            android:fontFamily="@font/ubuntu_light"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ohtxtprevious"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/previously_ordered_items"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="9dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ohrecyclerviewparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/ohtxtprevious"/>
+
+
+</RelativeLayout>

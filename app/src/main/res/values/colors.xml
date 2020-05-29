@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="DarkGreen">#004d40</color>
+    <color name="colorPrimary">#00695c</color>
+    <color name="colorAccent">#00897b</color>
+    <color name="colorMy1">#4db6ac</color>
+    <color name="colorMy2">#80cbc4</color>
+    <color name="justafterwhite">#b2dfdb</color>
+    <color name="white">#fafafa</color>
+    <color name="black">#212121</color>
+    <color name="grey">#e0e0e0</color>
+    <color name="yellow">#ffc107</color>
+
+    <color name="login_medium">#66ffffff</color>
+    <color name="login_light">#1affffff</color>
+    <color name="login">#ccffffff</color>
+
+
+
+</resources>

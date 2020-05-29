@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FaqFragment"
+    android:background="@color/colorMy2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/faqtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/frequently_asked_questions"
+        android:textSize="16sp"
+        android:fontFamily="@font/ubuntu_light"
+        android:layout_margin="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@+id/faqtxt">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="4dp"
+                android:fadeScrollbars="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/faqq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#b2dfdb"
+                    android:text="@string/proceed_to_cart"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:padding="5dp"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/faqa1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:text="@string/proceed_to_cart"
+                    android:textSize="12sp"
+                    android:padding="6dp"/>
+
+
+                <TextView
+                    android:id="@+id/faqq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#b2dfdb"
+                    android:text="@string/proceed_to_cart"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textSize="12sp"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/faqa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/proceed_to_cart"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="6dp"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/faqq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#b2dfdb"
+                    android:text="@string/proceed_to_cart"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textSize="12sp"
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:id="@+id/faqa3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/proceed_to_cart"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="6dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/faqq4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#b2dfdb"
+                    android:text="@string/proceed_to_cart"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textSize="12sp"
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:id="@+id/faqa4"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/proceed_to_cart"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="6dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/faqq5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#b2dfdb"
+                    android:text="@string/proceed_to_cart"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textSize="12sp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/faqa5"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/proceed_to_cart"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="6dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/faqq6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#b2dfdb"
+                    android:text="@string/proceed_to_cart"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textSize="12sp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/faqa6"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/proceed_to_cart"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="6dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/faqq7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#b2dfdb"
+                    android:text="@string/proceed_to_cart"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:id="@+id/faqa7"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/proceed_to_cart"
+                    android:textSize="12sp"
+                    android:padding="6dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

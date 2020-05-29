@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SearchFragment">
+
+    <RelativeLayout
+        android:id="@+id/searchprogresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/searchprogresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No restaurants match your search"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtxtsearch"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/searchview"
+        android:hint="  Search here"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_light"
+        android:layout_marginBottom="8dp"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_icon_search"
+        android:drawableTint="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclersearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_below="@id/edtxtsearch"/>
+
+
+</RelativeLayout>

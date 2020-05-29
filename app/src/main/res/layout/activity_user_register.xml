@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserRegisterActivity"
+    android:background="@drawable/login_screen_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/food_land"
+        android:textAllCaps="true"
+        android:textSize="40sp"
+        android:fontFamily="@font/bangers"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+
+    <EditText
+        android:id="@+id/edtxtname"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:drawableTint="@color/white"
+        android:background="@drawable/edittext_login_background"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_icon_name"/>
+
+    <EditText
+        android:id="@+id/edtxtemailregister"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/e_mail"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:drawableTint="@color/white"
+        android:background="@drawable/edittext_login_background"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_icon_email"/>
+
+    <EditText
+        android:id="@+id/edtxtmobilenoregister"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/mobile_number"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:drawableTint="@color/white"
+        android:background="@drawable/edittext_login_background"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_icon_mobile"/>
+
+    <EditText
+        android:id="@+id/edtxtaddress"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/delivery_address"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:drawableTint="@color/white"
+        android:background="@drawable/edittext_login_background"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_icon_deliveryaddress"/>
+
+    <EditText
+        android:id="@+id/edtxtpasswordregister"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/password_min_4_char"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:drawableTint="@color/white"
+        android:background="@drawable/edittext_login_background"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_icon_password"/>
+
+    <EditText
+        android:id="@+id/edtxtconfirmpassword"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/password"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        android:drawableTint="@color/white"
+        android:background="@drawable/edittext_login_background"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_icon_password"/>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

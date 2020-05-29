@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <technolifestyle.com.imageslider.FlipperLayout
+        android:id="@+id/homeviewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+       android:layout_centerHorizontal="true">
+    </technolifestyle.com.imageslider.FlipperLayout>
+
+
+    <TextView
+        android:id="@+id/hometxttrending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trending Now"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:padding="7dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_below="@id/homeviewflipper"
+        android:drawableRight="@drawable/ic_icon_arrow"
+        android:drawableTint="@color/DarkGreen"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homerecyclerview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hometxttrending"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/hometxttoppicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_picks_for_you"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:padding="7dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_below="@id/homerecyclerview2"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homerecyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hometxttoppicks"
+       android:layout_marginTop="5dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

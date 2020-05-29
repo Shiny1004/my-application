@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="4dp"
+    android:layout_weight="7">
+
+    <TextView
+        android:id="@+id/txtno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="no"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlayoutmenu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.7">
+
+    <TextView
+        android:id="@+id/txtdishname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish Name"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/ubuntu_light"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:id="@+id/txtdishcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish Cost"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtdishname"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/ubuntu_light"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:layout_margin="7dp"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:fontFamily="@font/ubuntu_light"
+        android:background="@drawable/add_button"
+        android:layout_weight="1.3"
+        android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>

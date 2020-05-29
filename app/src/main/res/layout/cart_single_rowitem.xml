@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:weightSum="6">
+
+            <ImageView
+                android:id="@+id/cartbullet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_icon_cart"
+                android:layout_margin="12dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/cartfooditemname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/proceed_to_cart"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ubuntu_light"
+                android:layout_weight="4.2"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/cartfooditemcost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/food_land"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ubuntu_light"
+                android:layout_weight="1.3"
+                android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

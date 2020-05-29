@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="preferences_login">Login Preferences</string>
+    <string name="preferences_check">Dialog Preferences</string>
+
+
+    <string name="app_name">FoodLand</string>
+    <string name="food_land">FoodLand</string>
+    <string name="hello_there">HELLO THERE!</string>
+
+    <string name="enter_username">Mobile Number</string>
+    <string name="password">Password</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string name="login">Log in</string>
+
+    <string name="new_user_register_here">New User? Register here!</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="register">Register</string>
+
+    <string name="password_min_4_char">Password(Min 4 characters)</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="e_mail">E-mail Address</string>
+    <string name="name">Name</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="enter_your_registered_mobile_number_and_e_mail_here">Enter your registered Mobile Number and E-mail Address here</string>
+    <string name="otp_is_sent_only_once_in_24hrs">OTP is sent only once in 24hrs.</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="favorite_restaurants">Favorite Restaurants</string>
+    <string name="faqs">FAQs</string>
+    <string name="order_history">Order History</string>
+    <string name="logout">LogOut</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="all_restaurants">All Restaurants</string>
+    <string name="about_us">About Us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_picks_for_you">Top picks for you :) </string>
+    <string name="proceed_to_cart">Proceed to Cart </string>
+    <string name="reset_password">Reset Password</string>
+    <string name="order_placed">Order Placed!</string>
+    <string name="previously_ordered_items">Previously ordered items:</string>
+    <string name="add">Add</string>
+    <string name="some_error_occured_try_again_later">Some error occured.Try again later:(</string>
+    <string name="frequently_asked_questions">Frequently asked questions:</string>
+    <string name="no_previous_orders">No previous orders</string>
+    <string name="enter_the_received_otp_below">Enter the received OTP below</string>
+
+</resources>

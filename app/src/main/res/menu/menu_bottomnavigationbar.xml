@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<group
+    android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/notchecked"
+        android:visible="false"
+        android:title=""/>
+
+    <item
+        android:id="@+id/txthome"
+        android:title="@string/home"
+        android:icon="@drawable/ic_icon_home"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:checkable="false" />
+
+    <item
+        android:id="@+id/txtsearch"
+        android:title="Search"
+        android:icon="@drawable/ic_icon_search"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:checkable="false"/>
+
+    <item
+        android:id="@+id/txtabout"
+        android:title="@string/about"
+        android:icon="@drawable/ic_icon_about"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:checkable="false"/>
+
+    <item
+        android:id="@+id/txtprofile"
+        android:title="@string/my_profile"
+        android:icon="@drawable/ic_icon_profile"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:checkable="false"/>
+
+</group>
+
+</menu>
